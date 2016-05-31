@@ -47,12 +47,12 @@ class CheckedArray
 			count = c.getCount();
 		}
 
-		CheckedArray<T> & operator=(CheckedArray<T> &rhs)
+		CheckedArray<T> & operator=(CheckedArray<T> *rhs)
 		{
 			if (this == rhs) {
 				return rhs;
 			}
-			count = rhs.getCount();
+			count = rhs->getCount();
 			delete []a;
 			a = new T[count];
 			for (int i = 0; i < count; ++i) {

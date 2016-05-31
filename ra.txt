@@ -1,0 +1,100 @@
+/03/10 11:36:19.952 {1} {wcm} [wcm] [32394]: UUID: 8c00000000001, ra: 7 (appctx): mac  0:44:8:15:0:2 
+03/10 11:36:19.953 {1} {wcm} [ft] [32403]: UUID: 8c00000000001, ra: 7 (info): Processing assoc-req station: 0044.0815.0002  AP: a293.b900.0200 -01 thread:0xfff536ae30
+03/10 11:36:19.953 {1} {wcm} [rf-profile] [32403]: UUID: 8c00000000001, ra: 7 (info): RF profile is NULL for default-group
+03/10 11:36:19.958 {1} {wcm} [apf-mobile] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 Client entry not found in the TRANS List.
+03/10 11:36:19.966 {1} {wcm} [avc] [32403]: UUID: 8c00000000001, ra: 7 (info): 0000.0000.0000 1:abcdefghijklmnopabcdefghijk: Set isAvcEnabled to FALSE, New Client
+03/10 11:36:19.966 {1} {wcm} [apf-mobile-state] [32403]: UUID: 8c00000000001, ra: 7 (debug): 0044.0815.0002 Changing state for mobile  0044.0815.0002  on AP  a293.b900.0200  from Idle to Idle, Reason:IDLE CREATE
+
+03/10 11:36:19.966 {1} {wcm} [pem-state] [32403]: UUID: 8c00000000001, ra: 7 (debug): 0044.0815.0002 Change state to START (0) last state START (0)
+
+03/10 11:36:19.966 {1} {wcm} [avc] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 1:abcdefghijklmnopabcdefghijk: create MSCB ctxOwnerApIp = 10.10.101.100, ApIp = 10.10.101.100
+03/10 11:36:19.966 {1} {wcm} [avc] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 1:abcdefghijklmnopabcdefghijk: create MSCB ctxOwnerApMac = a293.b900.0200, AP Mac = a293.b900.0200
+03/10 11:36:19.966 {1} {wcm} [avc] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 1:abcdefghijklmnopabcdefghijk: create MSCB ctxOwnerMwarIp = 10.10.100.3, MwarIp = 10.10.100.3 ctxOwnerApSlotId = 1
+03/10 11:36:19.966 {1} {wcm} [apf-mobile] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 Adding mobile on LWAPP AP  a293.b900.0200 (1) 
+03/10 11:36:19.966 {1} {wcm} [apf-mobile] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 Association received from mobile on radio 1 AP a293.b900.0200 
+03/10 11:36:19.967 {1} {wcm} [rf-profile] [32403]: UUID: 8c00000000001, ra: 7 (info): RF Profile  data read: Profile count: 0 (empty)
+03/10 11:36:19.967 {1} {wcm} [rf-profile] [32403]: UUID: 8c00000000001, ra: 7 (info): Profile Entry Doesn't exist for 
+03/10 11:36:19.967 {1} {wcm} [apf-mobile] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 Global 200 Clients are allowed to AP radio
+
+03/10 11:36:19.967 {1} {wcm} [rf-profile] [32403]: UUID: 8c00000000001, ra: 7 (info): RF Profile  data read: Profile count: 0 (empty)
+03/10 11:36:19.967 {1} {wcm} [rf-profile] [32403]: UUID: 8c00000000001, ra: 7 (info): Profile Entry Doesn't exist for 
+03/10 11:36:19.967 {1} {wcm} [apf-mobile] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 Rf profile 800 Clients are allowed to AP wlan
+
+03/10 11:36:19.967 {1} {wcm} [apf-mobile] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 apChanged 0 wlanChanged 0 mscb ipAddr 0.0.0.0, apf RadiusOverride 0x(nil), numIPv6Addr=0
+03/10 11:36:19.967 {1} {wcm} [apf-mobile] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 Applying WLAN policy on MSCB.
+03/10 11:36:19.967 {1} {wcm} [pem] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 Applying WLAN ACL policies to client
+03/10 11:36:19.967 {1} {wcm} [pem] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 No Interface ACL used for Wireless client in WCM(NGWC)
+03/10 11:36:19.967 {1} {wcm} [ap-grp] [32403]: UUID: 8c00000000001, ra: 7 (debug): The name of the interface is VLAN0098
+
+03/10 11:36:19.967 {1} {wcm} [apf-mobile] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 Applying site-specific IPv6 override for station  0044.0815.0002  - vapId 3, site 'default-group', interface 'VLAN0098'
+03/10 11:36:19.967 {1} {wcm} [apf-mobile] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 Applying local bridging Interface Policy for station  0044.0815.0002  - vlan 98, interface 'VLAN0098'
+03/10 11:36:19.967 {1} {wcm} [ap-grp] [32403]: UUID: 8c00000000001, ra: 7 (debug): default-group configured: no override needed
+
+03/10 11:36:19.967 {1} {wcm} [rf-profile] [32403]: UUID: 8c00000000001, ra: 7 (info): RF profile is NULL for default-group
+03/10 11:36:19.967 {1} {wcm} [apf-mobile] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 STA - rates (8): 140 18 152 36 176 72 96 108 0 0 0 0 0 0 0 0
+03/10 11:36:19.967 {1} {wcm} [wps-mfp-client] [32403]: UUID: 8c00000000001, ra: 7 (debug): 0044.0815.0002  abcdefghijklmnopab MFP=0 CCX=5 vapEncr=0 status=0  
+          
+03/10 11:36:19.968 {1} {wcm} [avc] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 AVC NOT enabled on Wlan
+03/10 11:36:19.968 {1} {wcm} [avc] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 AVC not supported: Disable client AVC support
+03/10 11:36:19.968 {1} {wcm} [capwap] [32403]: UUID: 8c00000000001, ra: 7 (debug): Platform capability Virtual-port is FALSE
+03/10 11:36:19.968 {1} {wcm} [apf-mobile] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 new capwap_wtp_iif_id 0x80000002
+03/10 11:36:19.968 {1} {wcm} [ifid_mgr] [32403]: UUID: 8c00000000001, ra: 7 (info): ifid alloc: idx:[0x00000000] wcmObjId:[0x0300004408150002] mac:[0044.0815.0002] major:[3] minor:[0] reclaim:[FALSE]
+03/10 11:36:19.970 {1} {wcm} [tdllib] [32403]: UUID: 8c00000000001, ra: 7 (debug): ReplDB internal write cursor move: Moved the write cursor for tablewith identifier: ifidmgr_client/263b1cef04d78527a0f217c640a6f9ea/0 and luid: 263b1cef04d78527a0f217c640a6f9ea
+03/10 11:36:19.970 {1} {wcm} [tdllib] [32403]: UUID: 8c00000000001, ra: 7 (debug): ReplDB explicit record enq: Successfully enqueued record update for table with identifier: ifidmgr_client/263b1cef04d78527a0f217c640a6f9ea/0and luid: 263b1cef04d78527a0f217c640a6f9ea
+03/10 11:36:19.970 {1} {wcm} [ifid_mgr] [32403]: UUID: 8c00000000001, ra: 7 (debug): ifid alloc 0x0300004408150002 new entry added to active record 0x80000052
+03/10 11:36:19.970 {1} {wcm} [apf-mobile] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 WLCLIENT: Client IIF Id alloc SUCCESS w/ client 0x80000052
+03/10 11:36:19.970 {1} {wcm} [capwap] [32403]: UUID: 8c00000000001, ra: 7 (debug): Platform capability Virtual-port is FALSE
+03/10 11:36:19.970 {1} {wcm} [pem] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 In >= L2AUTH_COMPLETE for station 0044.0815.0002
+03/10 11:36:19.971 {1} {wcm} [pem] [32403]: UUID: 8c00000000001, ra: 7 (info):  0044.0815.0002  0.0.0.0 START (0) Initializing policy
+03/10 11:36:19.971 {1} {wcm} [pem-state] [32403]: UUID: 8c00000000001, ra: 7 (debug): 0044.0815.0002 Change state to AUTHCHECK (2) last state START (0)
+
+03/10 11:36:19.971 {1} {wcm} [pem-state] [32403]: UUID: 8c00000000001, ra: 7 (debug): 0044.0815.0002 Change state to 8021X_REQD (3) last state AUTHCHECK (2)
+
+03/10 11:36:19.971 {1} {wcm} [pem] [32403]: UUID: 8c00000000001, ra: 7 (info):  0044.0815.0002  0.0.0.0 8021X_REQD (3) DHCP Not required on AP  a293.b900.0200  vapId 3 apVapId 3for this client
+03/10 11:36:19.971 {1} {wcm} [pem] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 Not Using WMM Compliance code qosCap 00
+03/10 11:36:19.971 {1} {wcm} [pem] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 changing encryptPolicy 0x80000001
+03/10 11:36:19.971 {1} {wcm} [bcast-igmp] [32403]: UUID: 8c00000000001, ra: 7 (debug): abcdefghijklm: num of mgid = 0
+
+03/10 11:36:19.972 {1} {wcm} [avc] [32403]: UUID: 8c00000000001, ra: 7 (info): a293.b900.0200 1:abcdefghijklm: ctxOwnerMwarIp: 10.10.100.3. ApIp: 10.10.101.100 ApEthMac: a293.b900.02f0
+03/10 11:36:19.972 {1} {wcm} [pem] [32403]: UUID: 8c00000000001, ra: 7 (info):  0044.0815.0002  0.0.0.0 8021X_REQD (3) Plumbed mobile LWAPP rule on AP  a293.b900.0200  vapId 3 apVapId 3
+03/10 11:36:19.972 {1} {wcm} [dot1x] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 abcdefghijklmnopa
+03/10 11:36:19.972 {1} {wcm} [apf-mobile-state] [32403]: UUID: 8c00000000001, ra: 7 (debug): 0044.0815.0002 Changing state for mobile  0044.0815.0002  on AP  a293.b900.0200  from Idle to Associated, Reason:ASSOC PEM ADD
+
+03/10 11:36:19.972 {1} {wcm} [apf-lb] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 New client (policy)
+03/10 11:36:19.972 {1} {wcm} [apf-mobile] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 Stopping deletion of Mobile Station: (callerId: 48)
+03/10 11:36:19.972 {1} {wcm} [apf-mobile] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 Ms Timeout = 0, Session Timeout = 1800
+
+03/10 11:36:19.972 {1} {wcm} [wips] [32403]: UUID: 8c00000000001, ra: 7 (info):  WIPS Auto-Immune Get returned 0 
+03/10 11:36:19.972 {1} {wcm} [ft] [32403]: UUID: 8c00000000001, ra: 7 (info): Sending assoc-resp station: 0044.0815.0002  AP: a293.b900.0200 -01 thread:0xfff536ae30
+03/10 11:36:19.972 {1} {wcm} [rf-profile] [32403]: UUID: 8c00000000001, ra: 7 (info): RF profile is NULL for default-group
+03/10 11:36:19.972 {1} {wcm} [rf-profile] [32403]: UUID: 8c00000000001, ra: 7 (info): From global config: Applying Rate:[12] index: 0 State: 2 Configs On Slot: 1On AP:  a2:93:b9:00:02:00
+03/10 11:36:19.972 {1} {wcm} [rf-profile] [32403]: UUID: 8c00000000001, ra: 7 (info): From global config: Applying Rate:[18] index: 1 State: 1 Configs On Slot: 1On AP:  a2:93:b9:00:02:00
+03/10 11:36:19.972 {1} {wcm} [rf-profile] [32403]: UUID: 8c00000000001, ra: 7 (info): From global config: Applying Rate:[24] index: 2 State: 2 Configs On Slot: 1On AP:  a2:93:b9:00:02:00
+03/10 11:36:19.972 {1} {wcm} [rf-profile] [32403]: UUID: 8c00000000001, ra: 7 (info): From global config: Applying Rate:[36] index: 3 State: 1 Configs On Slot: 1On AP:  a2:93:b9:00:02:00
+03/10 11:36:19.972 {1} {wcm} [rf-profile] [32403]: UUID: 8c00000000001, ra: 7 (info): From global config: Applying Rate:[48] index: 4 State: 2 Configs On Slot: 1On AP:  a2:93:b9:00:02:00
+03/10 11:36:19.972 {1} {wcm} [rf-profile] [32403]: UUID: 8c00000000001, ra: 7 (info): From global config: Applying Rate:[72] index: 5 State: 1 Configs On Slot: 1On AP:  a2:93:b9:00:02:00
+03/10 11:36:19.972 {1} {wcm} [rf-profile] [32403]: UUID: 8c00000000001, ra: 7 (info): From global config: Applying Rate:[96] index: 6 State: 1 Configs On Slot: 1On AP:  a2:93:b9:00:02:00
+03/10 11:36:19.972 {1} {wcm} [rf-profile] [32403]: UUID: 8c00000000001, ra: 7 (info): From global config: Applying Rate:[108] index: 7 State: 1 Configs On Slot: 1On AP:  a2:93:b9:00:02:00
+03/10 11:36:19.973 {1} {wcm} [dtls] [32403]: UUID: 8c00000000001, ra: 7 (debug): abcdefghijklmnopabcdefghijklmnopabcdefghijkl: DTLS connection find with Local 10.10.100.3:5247  Peer 10.10.101.100:52345
+
+03/10 11:36:19.973 {1} {wcm} [dtls] [32403]: UUID: 8c00000000001, ra: 7 (debug): a293.b900.0200 DTLS connection found! Acquiring lock for 0xfff575bc50
+03/10 11:36:19.973 {1} {wcm} [dtls] [32403]: UUID: 8c00000000001, ra: 7 (debug): a293.b900.0200 Releasing lock for 0xfff575bc50
+03/10 11:36:19.973 {1} {wcm} [apf-mobile] [32403]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 Sending Assoc Response to station on BSSID  a293.b900.0200  (status 0) ApVapId 3 Slot 1
+03/10 11:36:19.973 {1} {wcm} [apf-mobile-state] [32403]: UUID: 8c00000000001, ra: 7 (debug): 0044.0815.0002 Changing state for mobile  0044.0815.0002  on AP  a293.b900.0200  from Associated to Associated, Reason:ASSOC TIME
+
+03/10 11:36:19.973 {1} {wcm} [location-client] [32403]: UUID: 8c00000000001, ra: 7 (debug): 0044.0815.0002 802 new client  0044.0815.0002 
+
+03/10 11:36:19.973 {1} {wcm} [qos] [32313]: UUID: 8c00000000001, ra: 7 (info): 0044.0815.0002 [QOS] %: Skipped Add Mobile QoS Thinbind Payld for STA
+03/10 11:36:19.973 {1} {wcm} [dtls] [32313]: UUID: 8c00000000001, ra: 7 (debug): abcdefghijklmnopabcdefghijklmnopabcdefghijkl: DTLS connection find with Local 10.10.100.3:5246  Peer 10.10.101.100:52345
+          
+03/10 11:36:19.973 {1} {wcm} [dtls] [32313]: UUID: 8c00000000001, ra: 7 (debug): a293.b900.0200 DTLS connection found! Acquiring lock for 0xfff575ba60
+03/10 11:36:19.974 {1} {wcm} [dtls] [32313]: UUID: 8c00000000001, ra: 7 (debug): a293.b900.0200 Releasing lock for 0xfff575ba60
+03/10 11:36:19.974 {1} {wcm} [spam] [32313]: UUID: 8c00000000001, ra: 7 (info): a293.b900.0200 Successful transmission of LWAPP Add-Mobile to AP  a293.b900.0200 
+03/10 11:36:19.974 {1} {wcm} [spam] [32313]: UUID: 8c00000000001, ra: 7 (info): a293.b900.0200 Setting ADD_MOBILE ack state for STA  0044.0815.0002  (idx 63), seqno 64 action 1
+03/10 11:36:19.974 {1} {wcm} [cac] [32313]: UUID: 8c00000000001, ra: 7 (info): In ADD_MOBILE snooping spam_status callSnoop = 0 vapid 3
+03/10 11:36:19.979 {1} {wcm} [wcm] [32313]: UUID: 8c00000000002, ra: 7 (appctx): mac  0:44:8:15:0:2 
+03/10 11:36:19.979 {1} {wcm} [capwap] [32313]: UUID: 8c00000000002, ra: 7 (debug): a293.b900.0200 ADD_MOBILE acked - Initiating 1x to STA 0044.0815.0002 (idx 63)
+03/10 11:36:19.979 {1} {wcm} [dot1x] [32313]: UUID: 8c00000000002, ra: 7 (info): 0044.0815.0002 1XA: Initiating authentication
+03/10 11:36:19.979 {1} {wcm} [dot1x] [32313]: UUID: 8c00000000002, ra: 7 (info): 0044.0815.0002 1XA: Setting reauth timeout to 1800 seconds
+03/10 11:36:19.979 {1} {wcm} [eap-state] [32313]: UUID: 8c00000000002, ra: 7 (debug): 0044.0815.0002 1XA: reauth state transition 0 -> 0 
+03/10 11:36:19.979 {1} {wcm} [eap-state] [32313]: UUID: 8c00000000002, ra: 7 (debug): 0044.0815.0002 1XA: EAP state changed from Initialize to Disconnected

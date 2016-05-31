@@ -4,6 +4,8 @@
 using namespace std;
 #include <stdio.h>
 
+#define SIZE_LIMIT 100000
+
 void collatz(vector<int> &v, map<int, vector<int> >&d, int i)
 {
     if (i == 0) {
@@ -19,7 +21,9 @@ void collatz(vector<int> &v, map<int, vector<int> >&d, int i)
 	    map<int, vector<int> >::iterator it  = d.find(j); 
 		if (it == d.end()) {
         	collatz(v1, d, j);
-			d[j] = v1;
+			if (d.size() < SIZE_LIMIT) {
+				d[j] = v1;
+			}
 		} else {
 			v1 = (*it).second;
 		}
@@ -30,7 +34,9 @@ void collatz(vector<int> &v, map<int, vector<int> >&d, int i)
 	    map<int, vector<int> >::iterator it  = d.find(j); 
 		if (it == d.end()) {
         	collatz(v1, d, j);
-			d[j] = v1;
+			if (d.size() < SIZE_LIMIT) {
+				d[j] = v1;
+			}
 		} else {
 			v1 = (*it).second;
 		}
@@ -66,29 +72,26 @@ void print_collatz_map(map<int, vector<int> > &d)
 int main()
 {
     int i, j;
-	vector<pair<int, int> > input;
-	vector<pair<int, int> >::iterator it;
-	while (scanf("%d %d", &i, &j) != EOF) {
-		pair<int,int> p;
-		p.first = i;
-		p.second = j;
-		input.push_back(p);
-	}
-	
-	for (it = input.begin(); it != input.end(); it++) {
 	map<int, vector<int> > d;
+	int begin,end;
+	while (cin>>i>>j) {
+	int largest_collatz = 0;
 	int largest_seq = 0;
-	int largest_collatz;
-	for (int a= (*it).first; a <= (*it).second; a++) {
-    	vector<int> set1;
-    	collatz(set1, d, a);
-		if (largest_seq < set1.size()) {
-			largest_collatz = a;
-			largest_seq = set1.size();
+		if (i > j) {
+			begin = j;
+			end = i;
+		} else {
+			begin = i;
+			end = j;
 		}
-		//print_collatz(a, set1);
-	}
-	//cout<<"Largest sequence is for "<<largest_collatz<<" of size "<<largest_seq<<endl;
-		cout << (*it).first << " "<< (*it).second <<" " <<largest_seq<<endl;
+		for (int a=begin; a <= end; a++) {
+    		vector<int> set1;
+    		collatz(set1, d, a);
+			if (largest_seq < set1.size()) {
+				largest_collatz = a;
+				largest_seq = set1.size();
+			}
+		}
+		cout << i << " "<< j <<" " <<largest_seq<<endl;
 	}
 }

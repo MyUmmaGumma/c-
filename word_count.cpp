@@ -21,7 +21,7 @@ class WordAnalytics
             }
         }
         void readFromFile();
-        map<string, int> & getWords()
+        const map<string, int> & getWords() const
         {
             return wordCount;
         }
@@ -53,9 +53,38 @@ ostream & operator <<(ostream &os, WordAnalytics &ws)
     return os;
 }
 
+template<typename A, typename B>
+std::pair<B, A> flipper(const std::pair<A, B> &p)
+{
+	return std::pair<B, A>(p.second, p.first);
+}
+
+
+template<typename A, typename B>
+std::multimap<B, A> flip_map(const std::map<A, B> &src)
+{
+	std::multimap<B, A> dst;
+	std::transform(src.begin(), src.end(), 
+		std::inserter(dst, dst.begin()), flipper<A, B>);
+	return dst;
+}
+
+void
+print_top20_words_by_count(const WordAnalytics &w) 
+{
+	std::multimap<int, string> words = flip_map(w.getWords());
+	std::multimap<int, string>::reverse_iterator it = words.rbegin();
+	int i = 0;
+	while ( i <20 && it != words.rend()) {
+		i++;
+		cout<<(*it).second<<" "<<(*it).first<<endl;
+		it++;
+	}	
+}
+
 int main()
 {
     WordAnalytics w;
     w.readFromFile();
-    cout<<w;
+	print_top20_words_by_count(w);
 }
